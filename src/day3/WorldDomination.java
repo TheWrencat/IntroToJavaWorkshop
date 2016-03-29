@@ -2,13 +2,30 @@ package day3;
 
 import javax.swing.JOptionPane;
 
+import com.sun.org.apache.bcel.internal.generic.IfInstruction;
+
 public class WorldDomination {
 	public static void main(String[] args) {
-		// 1. Ask the user if they know how to write code.
 
-		// 2. If they say "yes", tell them they will rule the world.
+String code = JOptionPane.showInputDialog("Do you know how to code?");
 
-		// 3. Otherwise, wish them good luck washing dishes.
+if (code.equalsIgnoreCase("Yes")) {
+	System.out.println("You will rule the world.");
+}
+else {
+	System.out.println("Good luck washing dishes!");
+}
+
+String day = JOptionPane.showInputDialog("What day is it?");
+if (day.equalsIgnoreCase("Tuesday")) {
+	System.out.println("Happy ");
+}
+else {
+	System.out.println("Its ");
+}
+System.out.println("Tuesday!");
+
+//String age
 
 	}
 }

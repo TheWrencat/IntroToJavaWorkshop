@@ -14,7 +14,7 @@ Robot A = new Robot("batman");
 A.penDown();
 
 A.setSpeed(10);
-for (int i = 0; i < 200; i++)
+for (int i = 0; i < 2000; i++)
 {
 	A.turn(360/4);
 	A.move(5*i);

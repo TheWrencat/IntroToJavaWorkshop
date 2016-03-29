@@ -14,16 +14,30 @@ import javax.swing.JOptionPane;
 public class SpeakAndSpell {
 
 	public static void main(String[] args) {
-		// 1. Use the speak method to say the word. "e.g. spell mandlebrot"
-
-		// 2. Catch the user's answer in a String
-
-		// 3. If the user spelled the word correctly, speak "correct"
-
-		// 4. Otherwise say "wrong"
-
-		// 5. repeat the process for other words
-		
+speak("Spell individually.");
+String answer1 = JOptionPane.showInputDialog("Write your answer here.");
+if (answer1.equalsIgnoreCase("individually")) {
+	speak("Correct, Good job!");
+}
+else {
+	speak("Incorrect!");
+}
+speak("Spell Monopoly.");
+String answer2 = JOptionPane.showInputDialog("Write your answer here.");
+if (answer2.equalsIgnoreCase("monopoly")) {
+	speak("Correct, Good job!");
+}
+else {
+	speak("Incorrect!");
+}
+speak("Spell Cholesterol.");
+String answer3 = JOptionPane.showInputDialog("Write your answer here.");
+if (answer3.equalsIgnoreCase("Cholesterol")) {
+	speak("Correct, Good job!");
+}
+else {
+	speak("Incorrect!");
+}	
 	}
 
 	static void speak(String words) {
@@ -35,5 +49,25 @@ public class SpeakAndSpell {
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
